@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendEmail">
+
+    <EditText
+        android:id="@+id/subjectemail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="33dp"
+        android:hint="Enter Subject"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/messageemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailaddress" />
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="34dp"
+        android:hint="Enter Email Address"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/subjectemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/messageemail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="61dp"
+        android:hint="Enter messge"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/Sendemailbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectemail" />
+
+    <Button
+        android:id="@+id/Sendemailbtn"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="71dp"
+        android:text="Send Mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageemail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
